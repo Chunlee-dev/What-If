@@ -11,7 +11,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.chunleedev.whatif.adapters.FeedRcv;
+import com.chunleedev.whatif.adapters.StoryAdapter;
 import com.chunleedev.whatif.models.FeedModels;
+import com.chunleedev.whatif.models.StoryModel;
 
 import java.util.ArrayList;
 
@@ -52,6 +54,37 @@ public class FirstFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        RecyclerView rcvStory = view.findViewById(R.id.story_rcv);
+        ArrayList<StoryModel> storyList = new ArrayList<>();
+
+        rcvStory.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        rcvStory.setHasFixedSize(true);
+
+        storyList.add(new StoryModel(imgUrls[0]));
+        storyList.add(new StoryModel(imgUrls[1]));
+        storyList.add(new StoryModel(imgUrls[2]));
+        storyList.add(new StoryModel(imgUrls[3]));
+        storyList.add(new StoryModel(imgUrls[4]));
+        storyList.add(new StoryModel(imgUrls[5]));
+        storyList.add(new StoryModel(imgUrls[6]));
+        storyList.add(new StoryModel(imgUrls[7]));
+        storyList.add(new StoryModel(imgUrls[8]));
+        storyList.add(new StoryModel(imgUrls[9]));
+        storyList.add(new StoryModel(imgUrls[10]));
+        storyList.add(new StoryModel(imgUrls[11]));
+        storyList.add(new StoryModel(imgUrls[12]));
+        storyList.add(new StoryModel(imgUrls[13]));
+        storyList.add(new StoryModel(imgUrls[14]));
+        storyList.add(new StoryModel(imgUrls[15]));
+        storyList.add(new StoryModel(imgUrls[16]));
+        storyList.add(new StoryModel(imgUrls[17]));
+        storyList.add(new StoryModel(imgUrls[18]));
+        storyList.add(new StoryModel(imgUrls[19]));
+        storyList.add(new StoryModel(imgUrls[20]));
+
+        StoryAdapter storyAdapter = new StoryAdapter(storyList, getContext());
+        rcvStory.setAdapter(storyAdapter);
 
         RecyclerView recyclerView = view.findViewById(R.id.feed_rcv);
         ArrayList<FeedModels> mList = new ArrayList<>();
