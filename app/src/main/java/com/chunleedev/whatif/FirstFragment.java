@@ -55,7 +55,7 @@ public class FirstFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        RecyclerView rcvStory = view.findViewById(R.id.story_rcv);
+       /* RecyclerView rcvStory = view.findViewById(R.id.story_rcv);
         ArrayList<StoryModel> storyList = new ArrayList<>();
 
         rcvStory.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
@@ -84,7 +84,7 @@ public class FirstFragment extends Fragment {
         storyList.add(new StoryModel(imgUrls[20]));
 
         StoryAdapter storyAdapter = new StoryAdapter(storyList, getContext());
-        rcvStory.setAdapter(storyAdapter);
+        rcvStory.setAdapter(storyAdapter);*/
 
         RecyclerView recyclerView = view.findViewById(R.id.feed_rcv);
         ArrayList<FeedModels> mList = new ArrayList<>();
@@ -92,7 +92,7 @@ public class FirstFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setHasFixedSize(true);
 
-        mList.add(new FeedModels(imgUrls[18], imgUrls[0], titles[0], "Welcome to chunlee gram, the covik free chat room!", "10:45AM"));
+        mList.add(new FeedModels(imgUrls[18], imgUrls[0], "Lasisi Elenu", "Come buy markeyt for my hand nah, Na here lihana dey buy markeyt. Under my umbulela, bulela na my hand she buy the cloth wey she use sing that song", "10:45AM"));
         mList.add(new FeedModels(imgUrls[17], imgUrls[1], titles[1], "Welcome to chunlee gram, the covik free chat room!", "10:45AM"));
         mList.add(new FeedModels(imgUrls[16], imgUrls[2], titles[2], "Welcome to chunlee gram, the covik free chat room!", "10:45AM"));
         mList.add(new FeedModels(imgUrls[15], imgUrls[3], titles[3], "Welcome to chunlee gram, the covik free chat room!", "10:45AM"));

@@ -6,26 +6,6 @@
     android:orientation="vertical"
     tools:context=".FirstFragment">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:alpha="0.7"
-        android:fontFamily="@font/roboto_medium"
-        android:paddingHorizontal="8dp"
-        android:text="@string/peep_status"
-        android:textColor="@color/black"
-        android:textSize="18sp" />
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/story_rcv"
-        android:layout_width="match_parent"
-        android:layout_height="96dp"
-        android:layout_marginTop="4dp"
-        android:paddingHorizontal="8dp" />
-
     <View
         android:layout_width="match_parent"
         android:layout_height="0.7dp"

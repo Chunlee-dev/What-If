@@ -34,7 +34,7 @@ public class TabAdapter extends FragmentPagerAdapter {
         String pageTitle;
 
         switch (position){
-            case 0: pageTitle = "Feed";
+            case 0: pageTitle = "Merch";
             break;
             case 1: pageTitle = "Chat";
             break;
